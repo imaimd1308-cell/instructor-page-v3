@@ -376,9 +376,9 @@ h1 {
 .featured-course-preview h2 {
   overflow: hidden;
   color: #fffaf0;
-  font-family: var(--serif);
+  font-family: var(--sans);
   font-size: 1.08rem;
-  font-weight: 600;
+  font-weight: 700;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
