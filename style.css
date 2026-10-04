@@ -369,11 +369,18 @@ h1 {
   display: none;
 }
 
+.featured-course-copy {
+  min-width: 0;
+}
+
 .featured-course-preview h2 {
+  overflow: hidden;
   color: #fffaf0;
   font-family: var(--serif);
-  font-size: 1.14rem;
+  font-size: 1.08rem;
   font-weight: 600;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .featured-course-date {
@@ -460,8 +467,11 @@ h1 {
   grid-template-columns: 1fr auto;
   align-items: center;
   gap: 8px;
-  min-height: 62px;
+  min-height: 66px;
   padding: 12px 18px;
+  border: 1px solid rgba(16, 31, 56, 0.16);
+  border-top: 2px solid var(--gold);
+  box-shadow: 0 8px 20px rgba(10, 22, 40, 0.1);
   text-decoration: none;
   transition:
     transform 0.2s ease,
@@ -484,9 +494,9 @@ h1 {
 
 .stat-card span {
   color: var(--muted);
-  font-size: 0.88rem;
+  font-size: 1.06rem;
   font-weight: 800;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.03em;
 }
 
 .stat-card .stat-open {
@@ -1446,7 +1456,7 @@ body[data-page="history"] .course-list.compact {
   }
 
   .featured-course-preview h2 {
-    font-size: 0.92rem;
+    font-size: 0.9rem;
   }
 
   .featured-course-stamp {
