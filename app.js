@@ -243,7 +243,7 @@ function openFeaturedModal(course) {
     <span><strong>기관</strong>${escapeHtml(course.organization)}</span>
     <span><strong>대상</strong>${escapeHtml(course.target)} · ${escapeHtml(course.format)}</span>
     <span><strong>기간</strong>${formatDate(course.courseStart)} - ${formatDate(course.courseEnd)}</span>
-    <span><strong>구성</strong>${escapeHtml(course.time)}시간 · ${escapeHtml(course.sessions)}회차</span>
+    <span><strong>구성</strong>${escapeHtml(course.time)}<br>${escapeHtml(course.sessions)}회차</span>
   `;
   document.querySelector("#modalSummary").textContent = course.summary;
   document.querySelector("#modalTags").innerHTML = course.tags.map((tag) => `<span class="tag">${escapeHtml(tag)}</span>`).join("");
